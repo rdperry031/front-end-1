@@ -33,11 +33,11 @@ export default function ClassList() {
 
   return (
     <div className='classList'>
-      {/* <Routes>
+      <Routes>
         <Route path=':classId' element={<ClassPage />} />
-      </Routes> */}
+      </Routes>
       
-      <Outlet/>
+      {/* <Outlet/> */}
       <h2>Classes</h2>
       <div className='cardList'>
         {workouts.map((workout) => (
