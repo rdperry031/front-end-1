@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ClassCreate from './components/ClassCreate';
+
 import UserForm from './components/UserForm';
 import Home from './components/Home';
 import InstructorForm from './components/InstructorForm';

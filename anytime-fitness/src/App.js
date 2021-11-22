@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import InstructorForm from './components/InstructorForm';
 import UserForm from './components/UserForm';
-import ClassCreate from './components/ClassCreate';
+
 import { Routes, Route, Outlet } from 'react-router-dom';
 import LoginForm from './components/Login';
 import ClassList from './components/ClassList';
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='client' element={<UserForm />} />
-        <Route path='add-class' element={<ClassCreate />} />
+   
         <Route
           path='login'
           element={<LoginForm loggedIn={loggedIn} setLoggedIn={setLoggedIn} />}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, Link, Routes, Route, Outlet } from 'react-router-dom';
 import ClassPage from './ClassPage';
-import ClassCreate from './ClassCreate';
+
 import NavBar from './NavBar';
 
 
