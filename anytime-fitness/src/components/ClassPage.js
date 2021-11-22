@@ -36,9 +36,7 @@ console.log(params)
       <p>Class Size: {workout.max_class_size}</p>
       <div className='buttonList'>
         <button>Delete</button>
-      <Link to={`/edit/${workout.class_id}`}>
-        Edit
-      </Link>
+      
       </div>
     </div>
   );
