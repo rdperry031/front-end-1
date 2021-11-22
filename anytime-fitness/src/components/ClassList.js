@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate, Link, Routes, Route, Outlet } from 'react-router-dom';
+import { useNavigate, Link, Routes, Route } from 'react-router-dom';
 import ClassPage from './ClassPage';
 
 import NavBar from './NavBar';
-
-
- 
-
-
 
 export default function ClassList() {
   const { url } = useNavigate();
@@ -28,7 +23,6 @@ export default function ClassList() {
 
   useEffect(() => {
     getClasses();
-    
   }, []);
 
   return (
@@ -36,8 +30,6 @@ export default function ClassList() {
       <Routes>
         <Route path=':classId' element={<ClassPage />} />
       </Routes>
-      
-      {/* <Outlet/> */}
       <h2>Classes</h2>
       <div className='cardList'>
         {workouts.map((workout) => (
@@ -58,7 +50,6 @@ export default function ClassList() {
       <Link className='createButton' to={`/add-class`}>
         <h3>Create a Class</h3>
       </Link>
-         
     </div>
   );
 }

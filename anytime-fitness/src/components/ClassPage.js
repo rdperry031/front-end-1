@@ -1,8 +1,8 @@
 
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link, useParams, Routes, Route, Outlet } from 'react-router-dom';
-import EditClass from './EditClass';
+import { useParams } from 'react-router-dom';
 
 export default function ClassPage() {
   const [workout, setWorkout] = useState([]);
@@ -20,10 +20,9 @@ export default function ClassPage() {
         console.error(error);
       });
   }, [params.classId]);
-console.log(params)
+
   return (
     <div className='ClassPage'>
-     <Outlet/>
       <h2>{workout.class_name}</h2>
       <p>Workout Type: {workout.type}</p>
       <p>
@@ -36,7 +35,7 @@ console.log(params)
       <p>Class Size: {workout.max_class_size}</p>
       <div className='buttonList'>
         <button>Delete</button>
-      
+        <button>Edit</button>
       </div>
     </div>
   );
