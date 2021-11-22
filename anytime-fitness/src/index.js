@@ -19,7 +19,7 @@ ReactDOM.render(
   <Router>
     <React.StrictMode>
       {/* <NavBar/>  */}
-       
+       <Routes>
         {/* <Route path='/*' element={<App />} /> */}
         {/* <Route index element={<NavBar />} />  */}
         {/* <Route path='client' element={<UserForm />} />
@@ -28,7 +28,7 @@ ReactDOM.render(
         <Route path='classes/*' element={<ClassList/>} />
         <Route path='logout' element={<Logout/>}/> */}
       <Route path ='/*' element={<App/>}/>
-    
+    </Routes>
     </React.StrictMode>
   </Router>,
   document.getElementById('root')
